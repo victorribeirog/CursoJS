@@ -29,7 +29,7 @@ Formatação de números
     n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL}) (R$ 1.545,50)
         Localiza a variável n1 para o Brasil, com o estilo monetário BRL 
 
-Operadores:
+Operadores aritméticos:
     + adição
     -   subtração
     *   multiplicação
@@ -37,5 +37,23 @@ Operadores:
     %   resto da divisão
     **  potencia
     Ordem de precedência: (), **,*,/,%,+,-
+Operadores relacionais:
+    > maior
+    < menor
+    >= maior igual
+    <= menor igual
+    == igual
+    != diferente
+    === igualdade restrita (tipos)
+Operadores lógicos
+    ! negação
+    && conjunção
+    || disjunção
+Operador ternário
+    ? :
+    teste ? true : false
+    var média = 5.5
+    media > 7?'Aprovado':'Reprovado'
+
     
     
