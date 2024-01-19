@@ -55,5 +55,20 @@ Operador ternário
     var média = 5.5
     media > 7?'Aprovado':'Reprovado'
 
-    
-    
+DOM(Document Object Model)
+    Árvore DOM(ex05):
+        window
+ location document history
+            hmlt
+        head     body
+    meta title  h1 p   p   div 
+                    strong
+Métodos de Acessos para navegaro na árvore DOM
+    Marca: getElementByTagName()
+    ID: getElementsById()
+    Nome: getElementsByTagName
+    Classe: getElementsByClassName
+    Seletor: querySelector()
+             querySelectorAll()
+Eventos DOM:
+    mouseenter;mousemove;mousedown;mouseup;click;mouseout;etc.

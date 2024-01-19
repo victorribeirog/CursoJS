@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando DOM</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            color: rgb(73, 47, 30);
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var corpo = window.document.body
+        window.document.write('Usando getElementsByTagName(p0): ' + p1.innerText) //innerHTML já vem com a formatação, ou seja, DOM em negrito
+        p1.style.color='blue'
+        corpo.style.background='black'
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerHTML = 'Alterando conteúdo por JavaScript'
+        */
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'blue'
+    </script>
+</body>
+</html>
