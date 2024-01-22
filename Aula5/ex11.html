@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidae</h1>
+    Digite seu país: <input type="text" name="nac" id="inac">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="ires"></div>
+    <script>
+        function calcular(){
+            var res = window.document.querySelector('div#ires')
+            var nac = window.document.querySelector('input#inac')
+            var nacc = (nac.value)
+            if (nacc != 'Brasil') {
+                res.innerHTML = `<p>Você é <strong>Estrangeiro</strong>!</p>`
+            }else{
+                res.innerHTML = `<p>Você é <strong>brasileiro</strong>!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
